@@ -37,7 +37,7 @@ import {
 } from "@/components/ui/collapsible";
 import { usePathname } from "next/navigation";
 
-export function NavProjects({ projects }) {
+export function NavCollapse({ items, title }) {
   const { isMobile } = useSidebar();
   const pathname = usePathname();
 
@@ -48,7 +48,7 @@ export function NavProjects({ projects }) {
           <CollapsibleTrigger asChild className="flex-1">
             <SidebarGroupLabel asChild>
               <div className="flex w-full items-center">
-                <span>My work</span>
+                <span>{title}</span>
                 <Plus className="ml-auto h-4 w-4 group-data-[state=open]/collapsible:hidden" />
                 <Minus className="ml-auto h-4 w-4 group-data-[state=closed]/collapsible:hidden" />
               </div>
@@ -57,7 +57,7 @@ export function NavProjects({ projects }) {
         </div>
         <CollapsibleContent>
           <SidebarMenu>
-            {projects.map((item) => (
+            {items.map((item) => (
               <SidebarMenuItem key={item.name}>
                 <SidebarMenuButton asChild isActive={pathname === item.url}>
                   <a href={item.url} title={item.name}>

@@ -12,7 +12,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
-import { NavProjects } from "@/components/nav-projects";
+import { NavCollapse } from "@/components/nav-collapse";
 import { Separator } from "@/components/ui/separator";
 
 // This is sample data.
@@ -55,6 +55,18 @@ const data = {
       emoji: "🍻",
     },
   ],
+  navHobbies: [
+    {
+      name: "Poker",
+      url: "/hobbies/poker",
+      emoji: "🃏",
+    },
+    {
+      name: "Football",
+      url: "/hobbies/football",
+      emoji: "⚽",
+    },
+  ],
 };
 
 export function AppSidebar({ ...props }) {
@@ -66,7 +78,8 @@ export function AppSidebar({ ...props }) {
         <NavMain items={data.navMain} />
       </SidebarHeader>
       <SidebarContent>
-        <NavProjects projects={data.navProjects} />
+        <NavCollapse items={data.navProjects} title="My work" />
+        <NavCollapse items={data.navHobbies} title="Hobbies" />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarRail />
