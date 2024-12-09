@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Home, User, Briefcase, Phone } from "lucide-react";
+import { Home, User, Briefcase, Phone, Clock } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
 import { NavSecondary } from "@/components/nav-secondary";
@@ -30,6 +30,12 @@ const data = {
       icon: User,
       badge: "10",
     },
+    {
+      title: "Experience",
+      url: "/experience",
+      icon: Clock,
+      badge: "10",
+    },
   ],
   navSecondary: [
     {
@@ -41,17 +47,17 @@ const data = {
   navProjects: [
     {
       name: "Data Science at BP",
-      url: "/projects/data-science",
+      url: "/my-work/data-science",
       emoji: "📊",
     },
     {
-      name: "TPM for AI at BP",
-      url: "/projects/tpm-ai",
+      name: "TPM of AI at BP",
+      url: "/my-work/tpm-ai",
       emoji: "👔",
     },
     {
       name: "Bar-Trek",
-      url: "/projects/bar-trek",
+      url: "/my-work/bar-trek",
       emoji: "🍻",
     },
   ],
@@ -65,6 +71,11 @@ const data = {
       name: "Football",
       url: "/hobbies/football",
       emoji: "⚽",
+    },
+    {
+      name: "Boxing",
+      url: "/hobbies/boxing",
+      emoji: "🥊",
     },
   ],
 };

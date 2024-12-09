@@ -5,7 +5,9 @@ import { BreadcrumbPage } from "@/components/ui/breadcrumb";
 
 export function RouteBreadcrumb() {
   const pathname = usePathname();
-  const formattedPath = pathname.slice(1) || "home";
+  // Split path into segments and remove empty strings
+  const segments = pathname.split("/").filter(Boolean);
+  const formattedPath = segments.length ? segments.join("   >    ") : "home";
 
   return (
     <BreadcrumbPage className="line-clamp-1 capitalize">

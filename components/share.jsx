@@ -12,12 +12,12 @@ export function Share() {
             url: window.location.href,
           })
         }
-        className="px-4 py-2 rounded-md bg-white text-gray-800 hover:bg-gray-50 
-        border border-gray-200 shadow-sm hover:shadow-md transition-all 
-        flex items-center gap-2"
+        className="px-4 py-2 rounded-md  text-white 
+        hover:underline transition-all 
+        flex items-center"
       >
-        <IoShareOutline className="w-4 h-4" />
-        Share
+        <IoShareOutline className="w-3.5 h-3.5 mr-1" />
+        <span className="mt-0.5">Share</span>
       </button>
     </div>
   );
