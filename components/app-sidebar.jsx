@@ -1,15 +1,7 @@
 "use client";
 
 import * as React from "react";
-import {
-  Blocks,
-  Home,
-  MessageCircleQuestion,
-  Trash2,
-  User,
-  Briefcase,
-  Phone,
-} from "lucide-react";
+import { Home, User, Briefcase, Phone } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
 import { NavSecondary } from "@/components/nav-secondary";
@@ -20,6 +12,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import { NavProjects } from "@/components/nav-projects";
 import { Separator } from "@/components/ui/separator";
 
 // This is sample data.
@@ -27,44 +20,39 @@ const data = {
   navMain: [
     {
       title: "Home",
-      url: "#",
+      url: "/",
       icon: Home,
       isActive: true,
     },
     {
       title: "About Me",
-      url: "#",
+      url: "/about",
       icon: User,
-      badge: "10",
-    },
-    {
-      title: "Projects",
-      url: "#",
-      icon: Briefcase,
-      badge: "10",
-    },
-    {
-      title: "Contact",
-      url: "#",
-      icon: Phone,
       badge: "10",
     },
   ],
   navSecondary: [
     {
-      title: "Templates",
-      url: "#",
-      icon: Blocks,
+      title: "Contact",
+      url: "/contact",
+      icon: Phone,
+    },
+  ],
+  navProjects: [
+    {
+      name: "Data Science at BP",
+      url: "/projects/data-science",
+      emoji: "📊",
     },
     {
-      title: "Trash",
-      url: "#",
-      icon: Trash2,
+      name: "TPM for AI at BP",
+      url: "/projects/tpm-ai",
+      emoji: "👔",
     },
     {
-      title: "Help",
-      url: "#",
-      icon: MessageCircleQuestion,
+      name: "Bar-Trek",
+      url: "/projects/bar-trek",
+      emoji: "🍻",
     },
   ],
 };
@@ -78,6 +66,7 @@ export function AppSidebar({ ...props }) {
         <NavMain items={data.navMain} />
       </SidebarHeader>
       <SidebarContent>
+        <NavProjects projects={data.navProjects} />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarRail />

@@ -3,16 +3,17 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
+import { usePathname } from "next/navigation";
 
-export function NavMain({
-  items
-}) {
+export function NavMain({ items }) {
+  const pathname = usePathname();
+
   return (
-    (<SidebarMenu>
+    <SidebarMenu>
       {items.map((item) => (
         <SidebarMenuItem key={item.title}>
-          <SidebarMenuButton asChild isActive={item.isActive}>
+          <SidebarMenuButton asChild isActive={pathname === item.url}>
             <a href={item.url}>
               <item.icon />
               <span>{item.title}</span>
@@ -20,6 +21,6 @@ export function NavMain({
           </SidebarMenuButton>
         </SidebarMenuItem>
       ))}
-    </SidebarMenu>)
+    </SidebarMenu>
   );
 }
