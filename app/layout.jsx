@@ -11,7 +11,7 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 import { AppSidebar } from "@/components/app-sidebar";
-import { NavActions } from "@/components/nav-actions";
+import { Share } from "@/components/share";
 import { Separator } from "@/components/ui/separator";
 import { RouteBreadcrumb } from "@/components/route-breadcrumb";
 
@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body>
         <SidebarProvider>
           <AppSidebar />
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
                 </Breadcrumb>
               </div>
               <div className="ml-auto px-3">
-                <NavActions />
+                <Share />
               </div>
             </header>
             <div className="flex flex-1 flex-col gap-4 px-4 py-10">

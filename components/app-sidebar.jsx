@@ -2,26 +2,17 @@
 
 import * as React from "react";
 import {
-  AudioWaveform,
   Blocks,
-  Calendar,
-  Command,
   Home,
-  Inbox,
   MessageCircleQuestion,
-  Search,
-  Settings2,
-  Sparkles,
   Trash2,
   User,
   Briefcase,
   Phone,
 } from "lucide-react";
 
-import { NavFavorites } from "@/components/nav-favorites";
 import { NavMain } from "@/components/nav-main";
 import { NavSecondary } from "@/components/nav-secondary";
-import { NavWorkspaces } from "@/components/nav-workspaces";
 import { Logo } from "@/components/logo";
 import {
   Sidebar,
@@ -29,6 +20,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import { Separator } from "@/components/ui/separator";
 
 // This is sample data.
 const data = {
@@ -82,6 +74,7 @@ export function AppSidebar({ ...props }) {
     <Sidebar className="border-r-0" {...props}>
       <SidebarHeader>
         <Logo />
+        <Separator className="h-px bg-black dark:bg-white" />
         <NavMain items={data.navMain} />
       </SidebarHeader>
       <SidebarContent>

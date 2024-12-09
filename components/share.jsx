@@ -2,7 +2,7 @@
 
 import { IoShareOutline } from "react-icons/io5";
 
-export function NavActions() {
+export function Share() {
   return (
     <div className="flex items-center gap-2 text-sm">
       <button
