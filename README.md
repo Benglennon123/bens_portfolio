@@ -20,7 +20,6 @@ Visit the live site at: [benglennon.com](https://benglennon.com)
 - ⚡ Server-side rendering
 - 🎨 Modern UI with smooth animations
 - 🧭 Intuitive navigation with breadcrumbs
-- 📊 Interactive work timeline
 - 🔗 Social media integration
 
 ## 🏗️ Project Structure
