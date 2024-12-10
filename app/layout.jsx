@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
                 <Share />
               </div>
             </header>
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 overflow-y-auto w-full">
               <main>{children}</main>
             </div>
           </SidebarInset>

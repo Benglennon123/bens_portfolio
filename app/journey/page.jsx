@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="container max-w-5xl mx-auto px-4 md:px-8 py-6 md:pb-16">
-      <h1 className="text-4xl font-bold mb-4">My Work</h1>
+      <h1 className="text-4xl font-bold mb-4">My Journey</h1>
 
       {/* Journey Section */}
       <div className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4 space-y-4">
@@ -19,10 +19,10 @@ export default function Page() {
 
         <p>
           I went through school in Liverpool, stuck around at Maricourt sixth
-          form college, and then decided to take what turned out to be the most
-          hilariously timed gap year ever. The week after I chose to take a
-          break? Boom. Global pandemic hits. But weirdly, that timing actually
-          helped me figure out what I did and didn't want.
+          form college, and then decided to take what turned out to be the worst
+          timed gap year ever. The week after I chose to take a break? Boom.
+          Global pandemic hits. But weirdly, that timing actually helped me
+          figure out what I did and didn't want.
         </p>
 
         <p>

@@ -30,6 +30,12 @@ const data = {
       icon: User,
       badge: "10",
     },
+    {
+      title: "My Journey",
+      url: "/journey",
+      icon: Briefcase,
+      badge: "10",
+    },
   ],
   navSecondary: [
     {

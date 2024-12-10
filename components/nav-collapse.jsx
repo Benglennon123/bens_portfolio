@@ -38,14 +38,7 @@ export function NavCollapse({ items, title }) {
 
   return (
     <SidebarGroup className="group-data-[collapsible=icon]:hidden">
-      <SidebarGroupLabel>
-        <a
-          href={`/${title.toLowerCase().replace(/\s+/g, "-")}`}
-          className="hover:underline"
-        >
-          {title}
-        </a>
-      </SidebarGroupLabel>
+      <SidebarGroupLabel>{title}</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <SidebarMenuItem key={item.name}>
