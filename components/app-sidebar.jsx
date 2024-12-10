@@ -90,7 +90,7 @@ export function AppSidebar({ ...props }) {
       </SidebarHeader>
       <SidebarContent>
         <NavCollapse items={data.navProjects} title="My work" />
-        <NavCollapse items={data.navHobbies} title="Interests" />
+        {/* <NavCollapse items={data.navHobbies} title="Interests" /> */}
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarRail />
