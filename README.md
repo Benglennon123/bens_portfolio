@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ben Glennon's Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, showcasing my journey as a Full Stack Data Scientist and Founder.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit the live site at: [benglennon.com](https://benglennon.com)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Built With
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI & shadcn/ui
+- **Animations**: Framer Motion
+- **Icons**: Lucide React & React Icons
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- 📱 Fully responsive design
+- ⚡ Server-side rendering
+- 🎨 Modern UI with smooth animations
+- 🧭 Intuitive navigation with breadcrumbs
+- 📊 Interactive work timeline
+- 🔗 Social media integration
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    portfolio/
+    ├── app/                # Next.js app directory
+    │   ├── about/         # About page
+    │   ├── my-work/       # Project showcases
+    │   ├── journey/       # Career timeline
+    │   ├── interests/     # Personal interests
+    │   └── contact/       # Contact information
+    ├── components/        # Reusable components
+    ├── public/           # Static assets
+    └── styles/          # Global styles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+1. Clone the repository:
+   git clone https://github.com/yourusername/portfolio.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Install dependencies:
+   npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Run the development server:
+   npm run dev
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📱 Mobile Support
+
+The site is fully responsive and optimized for:
+
+- Desktop computers
+- Tablets
+- Mobile phones
+
+## 🎨 Customization
+
+The site uses a custom theme with CSS variables for colors that can be modified in the globals.css file. All UI components are built using shadcn/ui and can be customized in the components/ui directory.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contact
+
+Feel free to reach out:
+
+- LinkedIn: [Ben Glennon](https://www.linkedin.com/in/ben-glennon-0a78ab196/)
+- Email: glennonben@gmail.com
+- GitHub: [@Benglennon123](https://github.com/Benglennon123)
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [Radix UI](https://www.radix-ui.com/) for accessible component primitives
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) for smooth animations
