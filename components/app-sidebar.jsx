@@ -45,7 +45,7 @@ const data = {
       emoji: "📊",
     },
     {
-      name: "TPM of AI at BP",
+      name: "TPM for AI at BP",
       url: "/my-work/tpm-ai",
       emoji: "👔",
     },
