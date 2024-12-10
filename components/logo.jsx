@@ -22,7 +22,7 @@ export function Logo() {
   return (
     <SidebarMenu>
       <SidebarMenuItem>
-        <div className="flex items-center gap-2 px-1.5">
+        <div className="flex items-center gap-2 px-1.5 py-1">
           <div className="flex aspect-square size-5 items-center justify-center rounded-md bg-white border border-black">
             <img src="/favicon.ico" alt="Logo" />
           </div>

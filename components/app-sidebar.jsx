@@ -30,12 +30,6 @@ const data = {
       icon: User,
       badge: "10",
     },
-    {
-      title: "Experience",
-      url: "/experience",
-      icon: Clock,
-      badge: "10",
-    },
   ],
   navSecondary: [
     {
@@ -56,7 +50,7 @@ const data = {
       emoji: "👔",
     },
     {
-      name: "Bar-Trek",
+      name: "Founder of Bar-Trek",
       url: "/my-work/bar-trek",
       emoji: "🍻",
     },
@@ -64,17 +58,17 @@ const data = {
   navHobbies: [
     {
       name: "Poker",
-      url: "/hobbies/poker",
+      url: "/interests/poker",
       emoji: "🃏",
     },
     {
       name: "Football",
-      url: "/hobbies/football",
+      url: "/interests/football",
       emoji: "⚽",
     },
     {
       name: "Boxing",
-      url: "/hobbies/boxing",
+      url: "/interests/boxing",
       emoji: "🥊",
     },
   ],
@@ -90,7 +84,7 @@ export function AppSidebar({ ...props }) {
       </SidebarHeader>
       <SidebarContent>
         <NavCollapse items={data.navProjects} title="My work" />
-        <NavCollapse items={data.navHobbies} title="Hobbies" />
+        <NavCollapse items={data.navHobbies} title="Interests" />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarRail />

@@ -64,7 +64,7 @@ export default function Home() {
                 className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-lg object-cover"
               />
               <p className="text-xs md:text-sm text-muted-foreground leading-tight md:leading-normal">
-                Bar-trek - Revolutionizing the pub experience in the UK
+                Bar-Trek - Revolutionizing the pub experience in the UK
               </p>
             </div>
           </Link>
