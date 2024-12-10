@@ -22,12 +22,12 @@ export default function Page() {
         {/* Introduction Section */}
         <div className="prose dark:prose-invert max-w-none">
           <p>
-            Hello! I'm Ben, a 24 year old passionate data scientist with
-            expertise in building modern web applications. I specialize in AI
-            and love creating elegant solutions to complex problems. During my
-            time at BP, I worked on a range of projects, from AI-driven
-            reservoir engineering to helping the company build a framework to
-            deliver AI solutions to the business more efficiently.
+            Hello! I'm Ben, a passionate data scientist with expertise in
+            building modern web applications. I specialize in AI and love
+            creating elegant solutions to complex problems. During my time at
+            BP, I worked on a range of projects, from AI-driven reservoir
+            engineering to helping the company build a framework to deliver AI
+            solutions to the business more efficiently.
           </p>
         </div>
 
