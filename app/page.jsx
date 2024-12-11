@@ -38,7 +38,7 @@ export default function Home() {
         <div className="relative h-[140px] sm:h-[200px] lg:h-auto flex items-center justify-center lg:justify-end mb-6 lg:mb-0">
           <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-80 lg:h-80 flex">
             <img
-              src="https://media.licdn.com/dms/image/v2/D4E03AQHJloC2u_ebCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1677243049709?e=1739404800&v=beta&t=P40PPzvgR0a-E4-mK-J8zlPf5xPbONwIR3-EnM8bB3c"
+              src="/ben.jpg"
               alt="Ben's profile picture"
               className="rounded-full object-cover w-full h-full border-2 lg:border-4 border-primary shadow-lg"
             />
@@ -82,18 +82,18 @@ export default function Home() {
           </Link>
         </div>
         <div className="p-3 sm:p-4 lg:p-6 rounded-lg border hover:bg-accent transition-colors">
-          <Link href="/interests" className="block">
+          <Link href="/my-work/data-science" className="block">
             <h3 className="font-semibold text-xs sm:text-sm lg:text-base mb-1 lg:mb-2">
-              Interests
+              Past Role
             </h3>
             <div className="flex items-center gap-2 lg:gap-3">
               <img
-                src="/poker.jpg"
-                alt="Interests icon"
-                className="w-12 h-12 lg:w-14 lg:h-14 rounded-full object-cover"
+                src="/bp-logo.png"
+                alt="BP logo"
+                className="w-12 h-12 lg:w-14 lg:h-14 rounded-lg object-contain "
               />
               <p className="text-xs sm:text-sm lg:text-base text-muted-foreground">
-                Football lover, Trying boxing, and Poker player
+                Data Science for wells and subsurface at bp
               </p>
             </div>
           </Link>
