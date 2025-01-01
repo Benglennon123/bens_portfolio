@@ -14,7 +14,6 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { Share } from "@/components/share";
 import { Separator } from "@/components/ui/separator";
 import { RouteBreadcrumb } from "@/components/route-breadcrumb";
-import { MotionWrapper } from "@/components/motion-wrapper";
 
 export const metadata = {
   title: "Ben Glennon",
@@ -45,9 +44,7 @@ export default function RootLayout({ children }) {
               </div>
             </header>
             <div className="flex-1 overflow-y-auto w-full">
-              <main>
-                <MotionWrapper>{children}</MotionWrapper>
-              </main>
+              <main>{children}</main>
             </div>
           </SidebarInset>
         </SidebarProvider>

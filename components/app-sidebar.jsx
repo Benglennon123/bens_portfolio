@@ -61,7 +61,7 @@ const data = {
       emoji: "🍻",
     },
   ],
-  navHobbies: [
+  navInterests: [
     {
       name: "Poker",
       url: "/interests/poker",
@@ -77,6 +77,11 @@ const data = {
       url: "/interests/boxing",
       emoji: "🥊",
     },
+    {
+      name: "Podcasts",
+      url: "/interests/podcasts",
+      emoji: "🎧",
+    },
   ],
 };
 
@@ -90,7 +95,7 @@ export function AppSidebar({ ...props }) {
       </SidebarHeader>
       <SidebarContent>
         <NavCollapse items={data.navProjects} title="My work" />
-        {/* <NavCollapse items={data.navHobbies} title="Interests" /> */}
+        <NavCollapse items={data.navInterests} title="Interests" />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarRail />
