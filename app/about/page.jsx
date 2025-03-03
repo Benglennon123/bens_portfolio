@@ -1,5 +1,17 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
+import {
+  FaRobot,
+  FaBrain,
+  FaLaptopCode,
+  FaProjectDiagram,
+  FaChartLine,
+  FaPython,
+  FaJs,
+  FaReact,
+  FaDatabase,
+} from "react-icons/fa";
+import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 export const metadata = {
   title: "About Me | Ben",
@@ -35,7 +47,7 @@ export default function Page() {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Experience</h2>
           <div className="grid gap-4">
-            <div className="rounded-lg border p-4">
+            <div className="rounded-lg border p-4 hover:bg-accent/50 transition-colors">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                   <img
@@ -59,7 +71,7 @@ export default function Page() {
               </div>
               <p className="mt-2">Founder and Chief Executive Officer</p>
             </div>
-            <div className="rounded-lg border p-4">
+            <div className="rounded-lg border p-4 hover:bg-accent/50 transition-colors">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                   <img
@@ -85,7 +97,7 @@ export default function Page() {
               </div>
               <p className="mt-2">Leading AI projects and initiatives</p>
             </div>
-            <div className="rounded-lg border p-4">
+            <div className="rounded-lg border p-4 hover:bg-accent/50 transition-colors">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                   <img
@@ -120,27 +132,64 @@ export default function Page() {
         {/* Skills Section */}
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Skills</h2>
-          <div className="flex flex-wrap gap-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
-              "Gen-AI",
-              "AI Agents",
-              "Full Stack Development",
-              "Project Management",
-              "Data Science",
-              "Python",
-              "JavaScript",
-              "TypeScript",
-              "Tailwind CSS",
-              "React",
-              "Next.js",
-              "PostgreSQL",
+              {
+                icon: <FaRobot className="text-xl text-primary" />,
+                name: "Gen-AI",
+              },
+              {
+                icon: <FaBrain className="text-xl text-primary" />,
+                name: "AI Agents",
+              },
+              {
+                icon: <FaLaptopCode className="text-xl text-primary" />,
+                name: "Full Stack Development",
+              },
+              {
+                icon: <FaProjectDiagram className="text-xl text-primary" />,
+                name: "Project Management",
+              },
+              {
+                icon: <FaChartLine className="text-xl text-primary" />,
+                name: "Data Science",
+              },
+              {
+                icon: <FaPython className="text-xl text-primary" />,
+                name: "Python",
+              },
+              {
+                icon: <FaJs className="text-xl text-primary" />,
+                name: "JavaScript",
+              },
+              {
+                icon: <SiTypescript className="text-xl text-primary" />,
+                name: "TypeScript",
+              },
+              {
+                icon: <SiTailwindcss className="text-xl text-primary" />,
+                name: "Tailwind CSS",
+              },
+              {
+                icon: <FaReact className="text-xl text-primary" />,
+                name: "React",
+              },
+              {
+                icon: <SiNextdotjs className="text-xl text-primary" />,
+                name: "Next.js",
+              },
+              {
+                icon: <FaDatabase className="text-xl text-primary" />,
+                name: "PostgreSQL",
+              },
             ].map((skill) => (
-              <span
-                key={skill}
-                className="px-3 py-1 bg-secondary rounded-full text-sm"
+              <div
+                key={skill.name}
+                className="flex items-center gap-2 p-3 rounded-lg border hover:bg-accent/50 transition-colors"
               >
-                {skill}
-              </span>
+                <div>{skill.icon}</div>
+                <span>{skill.name}</span>
+              </div>
             ))}
           </div>
         </div>
@@ -148,22 +197,30 @@ export default function Page() {
         {/* Education Section */}
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Education</h2>
-          <div className="rounded-lg border p-4">
-            <h3 className="font-medium">
-              First Class Honours BSc Hons Data Science
-            </h3>
-            <p className="text-sm text-muted-foreground">
-              Data Science Degree Apprenticeship • 2020 - 2024
-            </p>
-            <p className="mt-2">Anglia Ruskin University (Cambridge Spark)</p>
+          <div className="rounded-lg border p-4 hover:bg-accent/50 transition-colors">
+            <div className="flex items-start gap-3">
+              <div className="text-2xl">🎓</div>
+              <div>
+                <h3 className="font-medium">
+                  First Class Honours BSc Hons Data Science
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Data Science Degree Apprenticeship • 2020 - 2024
+                </p>
+                <p className="mt-2">
+                  Anglia Ruskin University (Cambridge Spark)
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Testimonials Section */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-semibold">Testimonials (fake rn)</h2>
+          <h2 className="text-2xl font-semibold">Testimonials</h2>
           <div className="grid gap-6">
-            <div className="rounded-lg border p-6 space-y-3">
+            <div className="rounded-lg border p-6 space-y-3 hover:bg-accent/50 transition-colors">
+              <div className="text-2xl mb-2">💬</div>
               <p className="italic">
                 "Ben's expertise in AI and data science transformed our approach
                 to reservoir engineering. His ability to translate complex
@@ -174,7 +231,8 @@ export default function Page() {
                 <p className="text-sm text-muted-foreground">Tech Lead, bp</p>
               </div>
             </div>
-            <div className="rounded-lg border p-6 space-y-3">
+            <div className="rounded-lg border p-6 space-y-3 hover:bg-accent/50 transition-colors">
+              <div className="text-2xl mb-2">💬</div>
               <p className="italic">
                 "Working with Ben on AI initiatives was incredible. His
                 technical knowledge combined with his project management skills
@@ -187,7 +245,8 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border p-6 space-y-3">
+            <div className="rounded-lg border p-6 space-y-3 hover:bg-accent/50 transition-colors">
+              <div className="text-2xl mb-2">💬</div>
               <p className="italic">
                 "Ben's full-stack development skills and AI expertise helped us
                 deliver a complex project ahead of schedule. His attention to
@@ -204,32 +263,32 @@ export default function Page() {
         </div>
 
         {/* Connect With Me Section */}
-        <div className="space-y-4 items-center w-full flex-col">
+        <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Connect With Me</h2>
-          <div className="flex gap-6 items-center mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <a
               href="https://www.linkedin.com/in/ben-glennon-0a78ab196/"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="w-6 h-6" />
+              <FaLinkedin className="w-6 h-6 text-primary" />
               <span>LinkedIn</span>
             </a>
             <a
               href="https://github.com/Benglennon123"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="w-6 h-6" />
+              <FaGithub className="w-6 h-6 text-primary" />
               <span>GitHub</span>
             </a>
             <a
               href="mailto:glennonben@gmail.com"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors"
             >
-              <FaEnvelope className="w-6 h-6" />
+              <FaEnvelope className="w-6 h-6 text-primary" />
               <span>Email</span>
             </a>
           </div>
