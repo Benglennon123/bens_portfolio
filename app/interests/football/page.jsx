@@ -21,34 +21,134 @@ export default function Page() {
             Prime Barcelona and I definitely wasn't helping matters!
           </p>
 
+          <h2 className="text-2xl font-semibold mt-8">My Football Journey</h2>
+          <div className="grid gap-4">
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">⚽</div>
+              <div>
+                <h3 className="font-medium">11-a-side Football</h3>
+                <p className="text-sm text-muted-foreground">
+                  Played competitively in my younger years, forming lasting
+                  friendships and developing teamwork skills
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">🏆</div>
+              <div>
+                <h3 className="font-medium">5-a-side Regular</h3>
+                <p className="text-sm text-muted-foreground">
+                  Weekly player since age 16, developing skills and maintaining
+                  fitness through fast-paced matches
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">💙</div>
+              <div>
+                <h3 className="font-medium">Everton Supporter</h3>
+                <p className="text-sm text-muted-foreground">
+                  Lifelong fan of the Toffees through thick and thin - mostly
+                  thin lately!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-2xl font-semibold mt-8">The Injury Chronicles</h2>
           <p>
-            I'm no Booby Moore, but I can hold my own at 5-a-side - playing
-            weekly since I was 16. Had a nightmare run with injuries though:
-            broken foot, broke my wrist, and then the killer - managed to break
-            both my leg and ankle at the same time!
+            I'm no Bobby Moore, but I can hold my own at 5-a-side.
+            Unfortunately, my football career has been plagued by a series of
+            increasingly serious injuries:
           </p>
+
+          <div className="grid gap-4">
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">🦶</div>
+              <div>
+                <h3 className="font-medium">Broken Foot</h3>
+                <p className="text-sm text-muted-foreground">
+                  First major injury that sidelined me but didn't dampen my
+                  enthusiasm
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">✋</div>
+              <div>
+                <h3 className="font-medium">Broken Wrist</h3>
+                <p className="text-sm text-muted-foreground">
+                  Second significant injury that tested my resilience and
+                  recovery abilities
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">🦴</div>
+              <div>
+                <h3 className="font-medium">The Final Blow</h3>
+                <p className="text-sm text-muted-foreground">
+                  Managed to break both my leg and ankle simultaneously, ending
+                  my playing career
+                </p>
+              </div>
+            </div>
+          </div>
 
           {/* Image Section */}
           <img
             src="/leg_xray.jpeg"
-            alt="Football"
-            className="w-full h-64 object-contain rounded-lg"
+            alt="X-ray of broken leg and ankle"
+            className="w-full h-64 object-contain rounded-lg mt-4"
           />
-          <div className="flex flex-row gap-4 justify-between items-center">
-            <p>
-              But you know what? Even though I can't play anymore, I'll never
-              stop following the Toffee's. Any Everton fan will tell you it's
-              not exactly been smooth sailing lately, but that's just part of
-              being a Blue, isn't it? Time to switch things up now though -
-              going to get stuck into boxing to keep fit and loving every moment
-              of that.
-            </p>
+
+          <h2 className="text-2xl font-semibold mt-8">Life After Playing</h2>
+          <p>
+            Even though I can't play anymore, I'll never stop following the
+            Toffees. Any Everton fan will tell you it's not exactly been smooth
+            sailing lately, but that's just part of being a Blue, isn't it?
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
             <img
               src="/everton-fc.png"
-              alt="Football"
+              alt="Everton Football Club"
               className="w-full h-64 object-contain rounded-lg"
             />
+            <div className="flex flex-col justify-center">
+              <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+                <div className="text-2xl">🥊</div>
+                <div>
+                  <h3 className="font-medium">New Sporting Horizons</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Transitioning to boxing to maintain fitness and discover new
+                    athletic challenges
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors mt-4">
+                <div className="text-2xl">📺</div>
+                <div>
+                  <h3 className="font-medium">Dedicated Supporter</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Continuing to follow Everton through all the ups and downs
+                    of Premier League football
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <p className="mt-6">
+            Football has taught me resilience, teamwork, and how to cope with
+            disappointment (especially as an Everton fan!). While my playing
+            days may be behind me, the lessons and friendships I've gained will
+            last a lifetime.
+          </p>
         </div>
       </div>
     </div>

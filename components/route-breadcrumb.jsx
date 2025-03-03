@@ -14,9 +14,10 @@ const breadcrumbMap = {
   "/my-work/tpm-ai": "Technical Program Manager for AI",
   "/my-work/data-science": "Data Science",
   "/interests": "Interests",
-  "/interests/poker": "Interests > Poker",
-  "/interests/football": "Interests > Football",
-  "/interests/boxing": "Interests > Boxing",
+  "/interests/poker": "Poker",
+  "/interests/football": "Football",
+  "/interests/boxing": "Boxing",
+  "/interests/podcasts": "Podcasts",
 };
 
 export function RouteBreadcrumb() {

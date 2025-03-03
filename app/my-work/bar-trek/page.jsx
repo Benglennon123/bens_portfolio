@@ -15,58 +15,66 @@ export default function Page() {
         {/* Main Content */}
         <div className="prose dark:prose-invert max-w-none space-y-4">
           <p>
-            If you&apos;ve landed on this page, you&apos;re probably wondering,
-            &quot;What the f*** is Bar-Trek, and why is it in this professional
-            portfolio?&quot;
-          </p>
-
-          <p>
-            Bar-Trek is my brainchild - cooked up with my dad and three friends
-            back in June 2024. We&apos;ve built an app that&apos;s basically the
-            ultimate wingman for any pub adventure. Want to build an epic pub
-            crawl? Track your pub visits? Find the best spots? Bar-Trek&apos;s
-            got you covered.
+            Bar-Trek is my brainchild - a collaborative project with my dad and
+            three friends launched in June 2024. We've built the ultimate
+            platform for pub discovery, tracking, and planning epic pub crawls
+            across the UK.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">The Origin Story</h2>
           <p>
-            The whole thing started with my dad, John. His method of tracking
-            pub visits was hilariously old-school: a massive poster of Liverpool
-            covered in green and red dots. Green dots? Pubs he&apos;d visited.
-            Red dots? The unexplored territories waiting for him.
+            The genesis of Bar-Trek is a tale of family, tradition, and a touch
+            of humor. It all started with my dad, John, a true connoisseur of
+            Liverpool's vibrant pub scene. His method of tracking pub visits was
+            hilariously old-school: a poster of Liverpool adorned with a sea of
+            green and red dots.
           </p>
           <p>
-            I caught him in the act of building this and said &quot;What are you
-            doing! It would take me 2 hours to build a map from the spreadsheet
-            to visualize all this for you&quot; Turns out, that casual comment
-            was the spark that turned into Bar-Trek.
+            Green dots marked the pubs he'd conquered, while red dots
+            represented the unexplored territories awaiting his visit. It was a
+            visual representation of his liquid journey through the city – a
+            journey he was eager to share with others.
           </p>
+          <p>
+            I caught him in the act of building this and said, "What are you
+            doing! It would take me 2 hours to build a map from the spreadsheet
+            to visualize all this for you." That casual observation would be the
+            spark that ignited Bar-Trek's creation.
+          </p>
+
+          <figure className="my-8">
+            <img
+              src="https://ximgbvodfxhlfcdieahk.supabase.co/storage/v1/object/public/liverpool_crawls/stock%20images/Screenshot%202024-10-12%20205221.png"
+              alt="Bar-Trek Poster"
+              className="rounded-lg w-full object-cover shadow-md"
+            />
+          </figure>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">
             Technical Details
           </h2>
           <p>
             Technically speaking, I built the whole site using Next.js and
-            Supabase. What started as a digital version of my dad&apos;s quirky
-            poster quickly became something much bigger. We realized we
-            weren&apos;t just making a tracking app - we were creating a whole
-            new way to experience pub culture.
+            Supabase. What started as a digital version of my dad's quirky
+            poster quickly evolved as we recognized a greater opportunity: why
+            stop at tracking pubs when we could revolutionize the entire pub
+            crawl experience?
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">The Vision</h2>
           <p>
-            As we kept developing, our vision grew. We&apos;re not just building
-            an app; we&apos;re creating a community for pub lovers. Our goal? To
-            become the go-to platform for discovering, planning, and sharing
-            epic pubs across the UK.
+            As we delved deeper into development, our vision expanded. We're not
+            just creating an app; we're building a community platform for pub
+            enthusiasts. Our goal is to make Bar-Trek the go-to resource for
+            discovering, planning, and sharing unforgettable pub crawls across
+            the UK.
           </p>
 
           <p>
-            The journey from my dad&apos;s dot-covered poster to a full digital
-            platform has been wild. We&apos;re all about keeping the social
-            magic of pub culture alive, just with a tech twist. Whether
-            you&apos;re a local looking to discover hidden gems or a tourist
-            wanting the perfect pub route, Bar-Trek is your new best friend.
+            We're passionate about preserving the social essence of pub culture
+            while enhancing it with modern technology. Whether you're a local
+            looking to explore your city's hidden gems or a tourist seeking the
+            perfect pub route, Bar-Trek is designed with you in mind.
           </p>
 
           {/* Next Step Card */}

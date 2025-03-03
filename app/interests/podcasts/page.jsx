@@ -28,14 +28,13 @@ export default function Page() {
       platform: "YouTube",
     },
     {
-      title: "Upswing Poker",
-      description: "How to improve your poker game",
+      title: "Starter Story",
+      description: "How to start a business",
       image:
-        "https://upswingpoker.com/wp-content/uploads/2016/09/New-Favicon.png",
-      link: "https://open.spotify.com/show/3ZzToQfj7tiG6RqrsBh6rK",
-      platform: "spotify",
+        "https://s3.amazonaws.com/www.starterstory.com/starter-story-logo-wide.png",
+      link: "https://www.youtube.com/@starterstory",
+      platform: "YouTube",
     },
-    // Add more podcasts here
   ];
 
   return (

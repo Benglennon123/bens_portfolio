@@ -63,11 +63,6 @@ const data = {
   ],
   navInterests: [
     {
-      name: "Poker",
-      url: "/interests/poker",
-      emoji: "🃏",
-    },
-    {
       name: "Football",
       url: "/interests/football",
       emoji: "⚽",

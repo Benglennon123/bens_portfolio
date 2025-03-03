@@ -40,6 +40,17 @@ export default function Page() {
             lifting weights and counting reps.
           </p>
 
+          <figure className="my-8">
+            <img
+              src="/boxing.jpeg"
+              alt="Group photo at the boxing gym with training equipment and boxing-themed murals in the background"
+              className="rounded-lg w-full object-cover shadow-md"
+            />
+            <figcaption className="text-center text-sm text-muted-foreground mt-2">
+              Training at the Hangar
+            </figcaption>
+          </figure>
+
           <p>
             I decided to give it a shot, and honestly, I haven't looked back
             since. The combination of cardio, strength work, and learning actual
@@ -49,6 +60,23 @@ export default function Page() {
             incredible. While I personally have no plans to fight myself (my mum
             would have a heart attack!), the training and sparring aspects right
             now are the only things that interest me.
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-6">
+            What I've Gained from Boxing
+          </h2>
+          <p>
+            Beyond the physical benefits, boxing has given me a sense of
+            community that I didn't get from traditional gym workouts. The
+            people you see in the photo above have become more than just
+            training partners - they're a supportive network that pushes me to
+            improve every session.
+          </p>
+          <p>
+            The mental discipline required for boxing has also transferred to
+            other areas of my life. Learning to stay focused under pressure,
+            developing strategy, and pushing through when you're exhausted are
+            skills that have proven valuable both in and out of the ring.
           </p>
         </div>
       </div>

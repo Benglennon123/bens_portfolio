@@ -24,28 +24,44 @@ export default function Page() {
             keep their needs front and center - something I'll admit I briefly
             lost sight of later in my bp career.
           </p>
-          <p>
-            Those early months were all about figuring out what being a data
-            scientist actually meant - understanding my role and the
-            expectations placed on me. While it took a few months to get up to
-            speed, my prior coding experience outside of work helped me adapt
-            quickly. Before long, I was turning around tasks for the team like a
-            pro.
-          </p>
-          <p>
-            After almost a year in that initial team, I rotated into the
-            subsurface side of the business. This was where things really
-            clicked for me. I started to truly grow as a data scientist and find
-            ways to deliver real value to the organization.
-          </p>
-          <p>
-            Working with the reservoir engineering community was fascinating. I
-            was building different tools - not always machine learning or AI -
-            to support their daily work. Now, the RE team had a reputation for
-            being pretty independent and resistant to technological assistance.
-            It took some time, but once I cracked a couple of their tough nuts,
-            they couldn't get enough of my help!
-          </p>
+
+          <h2 className="text-2xl font-semibold mt-8">Early Career Journey</h2>
+          <div className="grid gap-4">
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">🚀</div>
+              <div>
+                <h3 className="font-medium">Wells Division</h3>
+                <p className="text-sm text-muted-foreground">
+                  Started as the sole data scientist, quickly adapting to
+                  deliver value while learning to prioritize customer needs
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">🌊</div>
+              <div>
+                <h3 className="font-medium">Subsurface Rotation</h3>
+                <p className="text-sm text-muted-foreground">
+                  Found my stride working with reservoir engineering, building
+                  tools that transformed their daily work
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+              <div className="text-2xl">🔍</div>
+              <div>
+                <h3 className="font-medium">Breaking Through</h3>
+                <p className="text-sm text-muted-foreground">
+                  Overcame initial resistance from the RE team by solving their
+                  toughest challenges, becoming an invaluable resource
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-2xl font-semibold mt-8">Community Leadership</h2>
           <p>
             Then came a massive opportunity - leading the Data and Analytics
             Community of Practice at bp. This was huge. Suddenly, I had access
@@ -54,14 +70,23 @@ export default function Page() {
             also constantly challenged me to focus on the most impactful
             projects.
           </p>
-          <p>
-            With so much on my plate and never enough time, I quickly learned
-            the art of being resourceful and prioritizing effectively. My
-            solution? A Hackathon - and not just any Hackathon. This became the
-            largest bp had ever run, creating massive value for the business and
-            providing incredible learning opportunities for data experts and
-            beginners alike.
-          </p>
+
+          <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors mt-4">
+            <div className="text-2xl">💡</div>
+            <div>
+              <h3 className="font-medium">The Hackathon Solution</h3>
+              <p className="text-sm text-muted-foreground">
+                Faced with limited time and resources, I organized the largest
+                hackathon in bp's history, creating massive value and learning
+                opportunities
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* AI for Everyone Section */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-semibold">AI for Everyone Initiative</h2>
           <p>
             The Hackathon was such a hit that I wanted to find a way to scale
             this approach across bp. While it had been phenomenal for the
@@ -72,30 +97,63 @@ export default function Page() {
             That's when I launched "AI for Everyone" - a multi-stage event we're
             still running today. It's broken down into several key phases:
           </p>
-        </div>
-
-        {/* AI for Everyone Section */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold">AI for Everyone Initiative</h2>
-          <ul className="grid gap-2">
+          <div className="grid gap-4 mt-4">
             {["Education", "Idea Submission", "Shark Tanks", "Idea Lab"].map(
               (phase) => (
-                <li key={phase} className="rounded-lg border p-4">
-                  <h3 className="font-medium">{phase}</h3>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    {getPhaseDescription(phase)}
-                  </p>
-                </li>
+                <div
+                  key={phase}
+                  className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors"
+                >
+                  <div className="text-2xl">{getPhaseIcon(phase)}</div>
+                  <div>
+                    <h3 className="font-medium">{phase}</h3>
+                    <p className="text-sm text-muted-foreground">
+                      {getPhaseDescription(phase)}
+                    </p>
+                  </div>
+                </div>
               )
             )}
-          </ul>
+          </div>
         </div>
-        <p>
-          The AI for Everyone initiative has been a huge success. It has
-          provided a platform for bp employees to learn about and experiment
-          with AI, and has helped to build a community around AI up-skilling.
-        </p>
-        <p>
+
+        <h2 className="text-2xl font-semibold mt-8">Impact & Outcomes</h2>
+        <div className="grid gap-4">
+          <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+            <div className="text-2xl">🌱</div>
+            <div>
+              <h3 className="font-medium">Community Building</h3>
+              <p className="text-sm text-muted-foreground">
+                Created a thriving community around AI upskilling and innovation
+                across bp
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+            <div className="text-2xl">🔄</div>
+            <div>
+              <h3 className="font-medium">Continuous Learning</h3>
+              <p className="text-sm text-muted-foreground">
+                Established a framework for ongoing AI education and
+                experimentation
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-3 p-4 rounded-lg border hover:bg-accent/50 transition-colors">
+            <div className="text-2xl">💼</div>
+            <div>
+              <h3 className="font-medium">Business Value</h3>
+              <p className="text-sm text-muted-foreground">
+                Delivered tangible business outcomes through practical AI
+                applications
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-6">
           As we continue to push the boundaries of what's possible with AI at
           bp, I'm excited to see how our community will evolve. The journey has
           been challenging yet rewarding, and I'm grateful for the opportunity
@@ -140,4 +198,15 @@ function getPhaseDescription(phase) {
     "Idea Lab": "Quick 1-6 week experiments to build and deploy solutions",
   };
   return descriptions[phase];
+}
+
+// Helper function to get phase icons
+function getPhaseIcon(phase) {
+  const icons = {
+    Education: "🎓",
+    "Idea Submission": "💭",
+    "Shark Tanks": "🦈",
+    "Idea Lab": "🧪",
+  };
+  return icons[phase];
 }
