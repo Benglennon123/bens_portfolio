@@ -238,14 +238,12 @@ export default function Page() {
             <div className="rounded-lg border p-6 space-y-3 hover:bg-accent/50 transition-colors">
               <div className="text-2xl mb-2">💬</div>
               <p className="italic">
-                "Ben's exceptional technical leadership on the RED-EX team was
-                transformative. He guided us in developing a flexible platform
-                that empowered our entire reservoir engineering community. His
-                strategic vision combined with technical expertise allowed us to
-                create solutions that were both innovative and practical. What
-                impressed me most was his ability to understand the needs of
-                engineers while implementing cutting-edge AI capabilities that
-                truly enhanced our workflows."
+                "Ben's technical excellence was fundamental in the
+                transformative delivery of a unified data platform to the global
+                reservoir engineering discipline. What impressed me most was his
+                pragmatic and innovative approach to resolving complex business
+                problems, accelerating business value through technologies such
+                as AI."
               </p>
               <div>
                 <p className="font-medium">Andrew Edirisoorya</p>
