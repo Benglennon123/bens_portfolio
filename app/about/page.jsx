@@ -222,40 +222,56 @@ export default function Page() {
             <div className="rounded-lg border p-6 space-y-3 hover:bg-accent/50 transition-colors">
               <div className="text-2xl mb-2">💬</div>
               <p className="italic">
-                "Ben's expertise in AI and data science transformed our approach
-                to reservoir engineering. His ability to translate complex
-                technical concepts into practical solutions is remarkable."
+                "Ben's ability to quickly grasp project needs and translate them
+                into action is remarkable. He's incredibly proactive,
+                consistently delivering results with a focused 'start simple'
+                approach. His expertise in web design and data-driven solutions
+                ensures we always arrive at the best possible outcome."
               </p>
               <div>
-                <p className="font-medium">Andrew Edirisoorya</p>
-                <p className="text-sm text-muted-foreground">Tech Lead, bp</p>
-              </div>
-            </div>
-            <div className="rounded-lg border p-6 space-y-3 hover:bg-accent/50 transition-colors">
-              <div className="text-2xl mb-2">💬</div>
-              <p className="italic">
-                "Working with Ben on AI initiatives was incredible. His
-                technical knowledge combined with his project management skills
-                made him an invaluable team member."
-              </p>
-              <div>
-                <p className="font-medium">Uthman Ali</p>
+                <p className="font-medium">Natalia Konstantinova</p>
                 <p className="text-sm text-muted-foreground">
-                  Global Responsible AI Officer, bp
+                  Global Architecture Lead in AI, bp
                 </p>
               </div>
             </div>
             <div className="rounded-lg border p-6 space-y-3 hover:bg-accent/50 transition-colors">
               <div className="text-2xl mb-2">💬</div>
               <p className="italic">
-                "Ben's full-stack development skills and AI expertise helped us
-                deliver a complex project ahead of schedule. His attention to
-                detail and problem-solving abilities are exceptional."
+                "Ben's exceptional technical leadership on the RED-EX team was
+                transformative. He guided us in developing a flexible platform
+                that empowered our entire reservoir engineering community. His
+                strategic vision combined with technical expertise allowed us to
+                create solutions that were both innovative and practical. What
+                impressed me most was his ability to understand the needs of
+                engineers while implementing cutting-edge AI capabilities that
+                truly enhanced our workflows."
               </p>
               <div>
-                <p className="font-medium">Adrian O'Neill</p>
+                <p className="font-medium">Andrew Edirisoorya</p>
                 <p className="text-sm text-muted-foreground">
-                  Digital Product Manager, bp
+                  Subsurface Tech Lead, bp
+                </p>
+              </div>
+            </div>
+            <div className="rounded-lg border p-6 space-y-3 hover:bg-accent/50 transition-colors">
+              <div className="text-2xl mb-2">💬</div>
+              <p className="italic">
+                "Ben is a strategic and highly organized problem solver. His
+                ability to navigate and streamline complex projects is truly
+                impressive. He brings a unique blend of skills, including
+                innovative AI application and sophisticated portfolio
+                management, with a keen business understanding of the oil and
+                gas industry. This combination showcases a strong analytical and
+                problem-solving mindset, making him an invaluable asset. Ben's
+                rapid learning and adaptability are particularly noteworthy. I
+                confidently recommend him to any organization seeking a highly
+                effective and forward-thinking professional."
+              </p>
+              <div>
+                <p className="font-medium">Uthman Ali</p>
+                <p className="text-sm text-muted-foreground">
+                  Global Responsible AI Officer, bp
                 </p>
               </div>
             </div>
