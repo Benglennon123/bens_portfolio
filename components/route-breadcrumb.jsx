@@ -18,6 +18,7 @@ const breadcrumbMap = {
   "/interests/football": "Football",
   "/interests/boxing": "Boxing",
   "/interests/podcasts": "Podcasts",
+  "/cv": "CV",
 };
 
 export function RouteBreadcrumb() {
